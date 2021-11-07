@@ -8,7 +8,6 @@ int main(int argc, char **argv)
 {
     GLFWwindow *window;
 
-    /* Initialize the library */
     if (!glfwInit())
     {
         return -1;
