@@ -26,10 +26,8 @@ int main(int argc, char **argv)
         return -1;
     }
 
-    /* Make the window's context current */
     glfwMakeContextCurrent(window);
 
-    /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
         /* Render here */
