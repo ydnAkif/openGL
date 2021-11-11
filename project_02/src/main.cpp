@@ -12,9 +12,11 @@ const char *vssource = "#version 330 core\nlayout(location = 0) in vec3 inPositi
 const char *fssource = "#version 330 core\nout vec4 fragColor;void main(){fragColor = vec4(0.7f, 0.7f, 0.0f, 1.0f);}";
 
 //noktalara ait koordinat bilgileri.
-float vertices[] = {-0.6f, -0.6f, 0.0f,
-                    0.5f, -0.5f, 0.0f,
-                    0.0f, 0.5f, 0.0f};
+float vertices[] = {
+    -0.5f, -0.5f, 0.0f, // left
+    0.5f, -0.5f, 0.0f,  // right
+    0.0f, 0.5f, 0.0f    // top
+};
 
 //OpenGL nesnelerinin id değerlerini tutacak olan değişkenler
 unsigned int fragmentShader;
